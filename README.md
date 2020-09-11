@@ -20,9 +20,5 @@ Using iteration count as the pixel value is the standard way to view fractals, i
 Fractals are visualised using the Plotly Heatmap chart https://plotly.com/python/heatmaps/ this give access to zoom, smoothing and colormap options reducing the amount of visualisation code needed. The FigureWidget class is utilised to let the selected zoom region be used for the next calculation area when the display cell is rerun. Early prototype of this project had the plot automatically recalculate on zoom in but the more complex and higher resolution plots don’t recalculate quick enough for this to be a real time interaction. This project is predominately used to generate high resolution fractal images for feeding in the Style Transfer projects  (https://github.com/BenjaminBradshaw/Fast-Style-Transfer-for-Arbitrary-Styles) so large complex imagery has been prioritised over zoom speed. But recalculation typically sits under a minute (which just builds the excitement of fractal exploration 😊). A large number of colour maps are available as part of Plotly and were a widget option in early versions of this project but I've decided that Icefire is *objectively* the best so have removed the selection box, but inferior  options can be found here: https://plotly.com/python/builtin-colorscales/.
 
 ## Export
-The main aim of this project is to produce high (and arbitrary) resolution fractal images. Export can be as a [LARGE]: https://benjaminbradshaw.github.io/fractals/Mandelbrot HTML file or a time stamped image (I find that with any generative art project timestamping file names it the only way to keep track of files).  
-
-
-
-
+The main aim of this project is to produce high (and arbitrary) resolution fractal images. Export can be as a https://benjaminbradshaw.github.io/fractals/burningship.html HTML file or a image named with all the parameters need to reproduce it (I find that with any generative art project parameter file names are the only way to keep track of files). 
 
