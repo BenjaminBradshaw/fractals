@@ -12,6 +12,9 @@ This is implemented by checking if the orbit of the iterated point Z excides a r
   >  z = (abs(z.real) + abs(z.imag)* 1j) ** power + c +shift
 ![alt text](https://raw.githubusercontent.com/BenjaminBradshaw/fractals/master/20200910-140517.jpeg "Burning ship")
 
+- Newton chain
+  > z = z - (z**power-c)/(3*z**(power-1))
+  ![alt text](https://raw.githubusercontent.com/BenjaminBradshaw/fractals/master/Newton%5E2.0%2B0.0(-0.4062%2C-0.0617)%2C(0.0533%2C0.2755)orbit_distance_logorbit_distance20200912-101201.jpeg "Newton chain")
 ## Visualisation style
 Using iteration count as the pixel value is the standard way to view fractals, it leads to a thin complex region separating the stable (interior) and unstable (exterior) regions. More interesting effect can be achieved by displaying properties of the orbits themselves. This project offers a few ways to do this individually on the interior and exterior regions of the fractals.
 ![alt text](https://raw.githubusercontent.com/BenjaminBradshaw/fractals/master/20200910-201450.jpeg "Exterior orbit distance")
