@@ -1,7 +1,7 @@
 # Fractal exploration in Jypter notbooks visualised with Plotly
 Fractal are calculated by repeatedly iterating relatively simple functions at each point on the complex plane. 
 The value of each coordinate (pixel) is by default the iteration count that function reaches before it escapes the origin region. 
-This is implemented by checking if the orbit of the iterated point Z excides a radius of 2 on the complex plan (calculated as if abs(z) > 2 ).
+This is implemented by checking if the orbit of the iterated point Z exceeds a radius of 2 on the complex plan (calculated as if abs(z) > 2 ).
 
 ## Fractals included in this project:
 - Mandelbrot
