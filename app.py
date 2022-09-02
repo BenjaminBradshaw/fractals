@@ -3,6 +3,21 @@ from dash import Dash, html, dcc
 import plotly.express as px
 import pandas as pd
 
+
+
+from tqdm import notebook as tqdm
+tqdm.tqdm()
+
+import time
+import datetime
+
+import ipywidgets as widgets
+from ipywidgets import interact, interactive, fixed, interact_manual
+import plotly.graph_objects as go
+
+import numpy
+import math
+
 app = Dash(__name__)
 
 # assume you have a "long-form" data frame
@@ -29,4 +44,4 @@ app.layout = html.Div(children=[
 ])
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(host="0.0.0.0", port="80")
